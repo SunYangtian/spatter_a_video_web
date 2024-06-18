@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+      </a>
+  </div>
+  <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+          <a class="navbar-item" href="https://yihua7.github.io/SC-GS-web/">
+    <span class="icon">
+        <i class="fas fa-home"></i>
+    </span>
+          </a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                  Related Research
+              </a>
+              <div class="navbar-dropdown">
+                  <a class="navbar-item" href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/"
+                     target="_blank">
+                      3D Gaussian Splatting
+                  </a>
+                  <a class="navbar-item" href="https://yihua7.github.io/SC-GS-web/" target="_blank">
+                      SC-GS
+                  </a>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</nav>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description"
+          content="Splatter a Video: Video Gaussian Representation for Versatile Processing">
+    <meta name="keywords" content="Video Processing, Gaussian Splatting">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Splatter a Video: Video Gaussian Representation for Versatile Processing</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/ARF_VanGogh.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Splatter a Video: Video Gaussian Representation for Versatile Processing</h1>
+            
+            <div class="title is-3">
+            <!-- <strong>CVPR 2024</strong> -->
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <div class="author-block">
+                <a href="https://sunyangtian.github.io/">Yang-Tian Sun</a><sup>1 *</sup>,
+              </div>
+              <div class="author-block">
+                <a href="https://yihua7.github.io/website/">Yi-Hua Huang</a><sup>1 *</sup>,
+              </div>
+              <div class="author-block">
+                <a href="https://github.com/marlinilram">Lin Ma</a><sup></sup>,
+              </div>
+              <div class="author-block">
+                <a href="https://github.com/shawLyu">Xiaoyang Lyu</a><sup>1</sup>,
+              </div>
+              <div class="author-block">
+                <a href="https://yanpei.me/">Yan-Pei Cao</a><sup>2 #</sup>,
+              </div>
+              <div class="author-block">
+                <a href="https://xjqi.github.io/">Xiaojuan Qi</a><sup>1 #</sup>
+              </div>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>The University of Hong Kong</span>,
+              <span class="author-block"><sup>2</sup>VAST</span>,
+              <!-- <span class="author-block"><sup>3</sup>Zhejiang University</span> -->
+          </div>
+          
+          <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>*</sup>Equal Contribution</span>,
+              <span class="author-block"><sup>#</sup>Corresponding Author</span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors">
+            <sup>1</sup> <a href="https://www.hku.hk/"><img style="width:12%; padding-right: 15px;" src="materials/logo/HKU.png"> </a>
+            <sup>2</sup> <a href="https://github.com/VAST-AI-Research"><img style="width:45%; padding-right: 15px;" src="materials/logo/VAST.png"> </a>
+          </div> -->
+
+	    <!-- <div class="is-size-5 publication-authors">
+		<strong>Arxiv</strong>
+            </div> -->
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="./materials/SC_GS_Arxiv.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="./materials/SC_GS_Supp.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supp</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2312.14937" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://youtu.be/CYQYX_0xi5E"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/yihua7/SC-GS"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width"> -->
+        <!-- <div id="results-carousel" class="carousel2 results-carousel"> -->
+          <!-- <div class="item item-steve"> -->
+            <img src="./materials/teaser.png" alt="teaser" width="50%">
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    </div>
+  </section>
+
+
+
+ <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Video representation is a long-standing problem that is crucial for various down- stream tasks, such as tracking, depth prediction, segmentation, view synthesis, and editing. However, current methods either struggle to model complex motions due to the absence of 3D structure or rely on implicit 3D representations that are ill-suited for manipulation tasks. To address these challenges, we introduce a novel explicit 3D representation—video Gaussian representation—that embeds a video into 3D Gaussians. Our proposed representation models video appearance in a 3D canonical space using explicit Gaussians as proxies and associates each Gaussian with 3D motions for video motion. This approach offers a more intrinsic and explicit representation than layered atlas or volumetric pixel matrices. To obtain such a representation, we distill 2D priors, such as optical flow and depth, from foundation models to regularize learning in this ill-posed setting. Extensive applications demonstrate the versatility of our new video representation. It has been proven effective in numerous video processing tasks, including tracking, consistent video depth and feature refinement, motion and appearance editing, and stereoscopic video generation.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Paper video. -->
+  <!-- <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Video</h2>
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/CYQYX_0xi5E?si=JXEJLI9cMgbS__cM"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> -->
+  <!--/ Paper video. -->
+    
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Video Gaussian Representation</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/camera_space.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Comparison with other methods</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/comparison.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Dense video tracking</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/tracking.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Consistent feature</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/consistent_feature.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Geometry editing</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/geometry_editing.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Appearance editing</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/appearance_editing.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- <div id="results-carousel" class="carousel2 results-carousel">
+              <div class="item item-steve">
+                <video poster="" id="steve" autoplay controls muted loop width="100%">
+                  <source src="./materials/videos/appearance_editing2.mp4" type="video/mp4">
+                </video>
+              </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Novel view synthesis</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/stereo_view.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Video frame interpolation</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/interpolation.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section class="section " id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{sun2024sav,
+        title={Splatter a Video: Video Gaussian Representation for Versatile Processing,
+        author={Sun, Yang-Tian, and Huang, Yi-Hua and Ma, Lin and Lyu, Xiaoyang and Cao, Yan-Pei and Qi, Xiaojuan},
+        journal={arXiv preprint arXiv:2312.14937},
+        year={2023}
+      }</code></pre>
+    </div>
+  </section>
+
+  <div class="columns is-centered">
+    <div class="column is-full-width">
+      <h2 class="title is-3">Acknowledgements</h2>
+      <div class="content has-text-justified">
+        <p>The website template is borrowed from <a href="https://nerfies.github.io/">Nerfies</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
