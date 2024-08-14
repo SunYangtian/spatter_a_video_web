@@ -59,6 +59,7 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
 </head>
 
 <body>
@@ -230,127 +231,47 @@
 
 
     <section class="section">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Comparison with other methods</h2>
-          <p>
-            <!-- Text -->
-          </p>
-          <div id="results-carousel" class="carousel2 results-carousel">
+      <div class="column has-text-centered is-full-width">
+        <div class="column is-full-width ">
+          <h2 class="title is-3">Dense Video Tracking</h2>
+          <div id="results-carousel" class="carousel results-carousel ">
             <div class="item item-steve">
               <video poster="" id="steve" autoplay controls muted loop width="100%">
-                <source src="./materials/videos/comparison.mp4" type="video/mp4">
+                <source src="./materials/videos/tracking/horsejumping-high.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/tracking/gold-fish.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/tracking/bmx-trees.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Quantative Comparison on Video Reconstruction</h2>
 
-          <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-            .tg .tg-0lax{text-align:left;vertical-align:top}
-            table {
-              margin: 0 auto;
-            }
-            </style>
-            <table class="tg"><thead>
-              <tr>
-                <th class="tg-0lax">Methods</th>
-                <th class="tg-0lax">Bear</th>
-                <th class="tg-0lax">Cow</th>
-                <th class="tg-0lax">Elephant</th>
-                <th class="tg-0lax">Breakdance-Flare</th>
-                <th class="tg-0lax">Train</th>
-                <th class="tg-0lax">Camel</th>
-                <th class="tg-0lax">Kite-surf</th>
-                <th class="tg-0lax">Average</th>
-              </tr></thead>
-            <tbody>
-              <tr>
-                <td class="tg-0lax">Omnimotion[45]</td>
-                <td class="tg-0lax">22.96</td>
-                <td class="tg-0lax">23.93</td>
-                <td class="tg-0lax">26.59</td>
-                <td class="tg-0lax">24.45</td>
-                <td class="tg-0lax">22.85</td>
-                <td class="tg-0lax">23.98</td>
-                <td class="tg-0lax">23.72</td>
-                <td class="tg-0lax">24.07</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">CoDeF[32]</td>
-                <td class="tg-0lax">29.17</td>
-                <td class="tg-0lax"><span style="font-weight:bold">28.82</span></td>
-                <td class="tg-0lax"><span style="font-weight:bold">30.50</span></td>
-                <td class="tg-0lax">25.99</td>
-                <td class="tg-0lax">26.53</td>
-                <td class="tg-0lax">26.10</td>
-                <td class="tg-0lax">27.17</td>
-                <td class="tg-0lax">27.75</td>
-              </tr>
-              <tr>
-                <td class="tg-0lax">Ours</td>
-                <td class="tg-0lax"><span style="font-weight:bold">30.17</span></td>
-                <td class="tg-0lax">28.24</td>
-                <td class="tg-0lax">29.82</td>
-                <td class="tg-1wig">27.18</td>
-                <td class="tg-1wig">28.09</td>
-                <td class="tg-1wig">27.74</td>
-                <td class="tg-1wig">27.82</td>
-                <td class="tg-1wig">28.44</td>
-              </tr>
-            </tbody></table>
-
-        </div>
-      </div>
-    </section>
-
-    <style type="static/css">
-      .tg  {border-collapse:collapse;border-spacing:0;}
-      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-        overflow:hidden;padding:10px 5px;word-break:normal;}
-      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-      .tg .tg-0lax{text-align:left;vertical-align:top}
-      </style>
-      <table class="tg"><thead>
-        <tr>
-          <th class="tg-0lax">Methods</th>
-          <th class="tg-0lax">Bear</th>
-          <th class="tg-0lax">Cow</th>
-          <th class="tg-0lax"></th>
-          <th class="tg-0lax"></th>
-          <th class="tg-0lax"></th>
-          <th class="tg-0lax"></th>
-        </tr></thead>
-    
-    <section class="section">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Dense video tracking</h2>
-          <p>
-            <!-- Text -->
-          </p>
-          <div id="results-carousel" class="carousel2 results-carousel">
+        <div class="column is-full-width ">
+          <div id="results-carousel" class="carousel results-carousel ">
             <div class="item item-steve">
               <video poster="" id="steve" autoplay controls muted loop width="100%">
-                <source src="./materials/videos/tracking.mp4" type="video/mp4">
+                <source src="./materials/videos/tracking/motorbike.mp4" type="video/mp4">
               </video>
             </div>
-          </div>
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/tracking/parkour.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/tracking/loading.mp4" type="video/mp4">
+              </video>
+            </div>
         </div>
-      </div>
     </section>
 
     
@@ -451,6 +372,164 @@
         </div>
       </div>
     </section>
+
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Quantative Comparison on Tap-Vid DAVIS</h2>
+
+          <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            table {
+              margin: 0 auto;
+            }
+            </style>
+            <table class="tg"><thead>
+              <tr>
+                <th class="tg-0lax">Methods</th>
+                <th class="tg-0lax">PSNR↑</th>
+                <th class="tg-0lax">SSIM↑</th>
+                <th class="tg-0lax">LPIPS↓</th>
+                <th class="tg-0lax">AJ ↑</th>
+                <th class="tg-0lax"><δ<sup>x</sup><sub>avg</sub> ↑</th>
+                <th class="tg-0lax">OA ↑</th>
+                <th class="tg-0lax">TC ↓</th>
+                <th class="tg-0lax">Training Time</th>
+                <th class="tg-0lax">GPU Memory</th>
+                <th class="tg-0lax">FPS</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td class="tg-0lax">4DGS</td>
+                <td class="tg-0lax">18.12</td>
+                <td class="tg-0lax">0.5735</td>
+                <td class="tg-0lax">0.5130</td>
+                <td class="tg-0lax">5.1</td>
+                <td class="tg-0lax">10.2</td>
+                <td class="tg-0lax">75.45</td>
+                <td class="tg-0lax">8.11</td>
+                <td class="tg-0lax">40 mins</td>
+                <td class="tg-0lax">10G</td>
+                <td class="tg-0lax">145.8</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">RoDynRF</td>
+                <td class="tg-0lax">24.79</td>
+                <td class="tg-0lax">0.723</td>
+                <td class="tg-0lax">0.394</td>
+                <td class="tg-0lax">\</td>
+                <td class="tg-0lax">\</td>
+                <td class="tg-0lax">\</td>
+                <td class="tg-0lax">\</td>
+                <td class="tg-0lax">> 24 hours</td>
+                <td class="tg-0lax">24G</td>
+                <td class="tg-0lax"><0.01</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Deformable Sprites</td>
+                <td class="tg-0lax">22.83</td>					
+                <td class="tg-0lax">0.6983</td>
+                <td class="tg-0lax">0.3014</td>
+                <td class="tg-0lax">20.6</td>
+                <td class="tg-0lax">32.9</td>
+                <td class="tg-0lax">69.7</td>
+                <td class="tg-0lax">2.07</td>
+                <td class="tg-0lax">30 mins</td>
+                <td class="tg-0lax">24G</td>
+                <td class="tg-0lax">1.6</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Omnimotion</td>							
+                <td class="tg-0lax">24.11</td>
+                <td class="tg-0lax">0.7145</td>
+                <td class="tg-0lax">0.3713</td>
+                <td class="tg-0lax"><span style="font-weight:bold">51.7</span></td>
+                <td class="tg-0lax"><span style="font-weight:bold">67.5</span></td>
+                <td class="tg-0lax"><span style="font-weight:bold">85.3</span></td>
+                <td class="tg-0lax"><span style="font-weight:bold">0.74</span></td>
+                <td class="tg-0lax">> 24 hours</td>
+                <td class="tg-0lax">24G</td>
+                <td class="tg-0lax"> <0.01</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">CoDeF</td>
+                <td class="tg-0lax">26.17</td>
+                <td class="tg-0lax">0.8160</td>
+                <td class="tg-0lax">0.2905</td>
+                <td class="tg-0lax">7.6</td>
+                <td class="tg-0lax">13.7</td>
+                <td class="tg-0lax">78.0</td>
+                <td class="tg-0lax">7.56</td>
+                <td class="tg-0lax">~30 mins</td>
+                <td class="tg-0lax">10G</td>
+                <td class="tg-0lax"> 8.8</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Ours</td>
+                <td class="tg-0lax"><span style="font-weight:bold">28.63</span></td>
+                <td class="tg-0lax"><span style="font-weight:bold">0.8373</span></td>
+                <td class="tg-0lax"><span style="font-weight:bold">0.2283</span></td>
+                <td class="tg-0lax">41.9</td>
+                <td class="tg-0lax">57.7</td>
+                <td class="tg-0lax">79.2</td>
+                <td class="tg-0lax">1.82</td>
+                <td class="tg-0lax">~30 mins</td>
+                <td class="tg-0lax">10G</td>
+                <td class="tg-0lax"> 149 </td>
+              </tr>
+            </tbody></table>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="section">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Comparison with other methods</h2>
+          <p>
+            <!-- Text -->
+          </p>
+          <div id="results-carousel" class="carousel2 results-carousel">
+            <div class="item item-steve">
+              <video poster="" id="steve" autoplay controls muted loop width="100%">
+                <source src="./materials/videos/comparison.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <style type="static/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-0lax{text-align:left;vertical-align:top}
+      </style>
+      <table class="tg"><thead>
+        <tr>
+          <th class="tg-0lax">Methods</th>
+          <th class="tg-0lax">Bear</th>
+          <th class="tg-0lax">Cow</th>
+          <th class="tg-0lax"></th>
+          <th class="tg-0lax"></th>
+          <th class="tg-0lax"></th>
+          <th class="tg-0lax"></th>
+        </tr></thead> -->
+
 
   <section class="section " id="BibTeX">
     <div class="container is-max-desktop content">
